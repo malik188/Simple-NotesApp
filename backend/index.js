@@ -5,6 +5,7 @@ app.use(express.json()); // Middleware to parse JSON bodies (required for POST r
 const cors = require("cors");
 
 app.use(cors());
+app.use(express.static("dist"));
 
 let notes = [
   {
